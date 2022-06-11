@@ -1,0 +1,111 @@
+.profileContainer {
+  margin-top: 30px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+  align-content: "flex-end";
+  width: max(60vw, 200px);
+  margin-left: 50px;
+}
+.nannyInfoContainer,
+.nannyInfo {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-content: center;
+  margin-bottom: 20px;
+}
+.nannyInfo {
+  flex-direction: column;
+  margin-left: -100px;
+}
+
+.offcanvasBtn {
+  box-shadow: inset 0px 1px 0px 0px #ffffff;
+  background: linear-gradient(to bottom, #ededed 5%, #dfdfdf 100%);
+  background-color: #ededed;
+  border-radius: 6px;
+  border: 1px solid #dcdcdc;
+  display: inline-block;
+  cursor: pointer;
+  color: #777777;
+  font-weight: bold;
+  width: 25%;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #ffffff;
+  margin: 20px auto;
+}
+
+.orderTypes {
+  border: 6px double #3d3a3a;
+  border-radius: 25px;
+  width: 55%;
+  margin: 20px auto;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+}
+.orderComponents {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 15px;
+  padding: 10px;
+  width: 100%;
+}
+
+.orderBtn {
+  box-shadow: 0px 10px 14px -7px #276873;
+  background: linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+  background-color: #599bb3;
+  border-radius: 8px;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #3d768a;
+}
+
+.outerShoppingCart {
+  position: absolute;
+  right: 21%;
+  top: 50%;
+  transform: translateY(-50%);
+  border-left: black 2px double;
+  padding-left: 20px;
+  height: 75vh;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.shoppingCartBody,
+.cartItem {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.cartItem {
+  flex-direction: row;
+}
+.cartQty,
+.cartTitle,
+.cartPrice,
+.cartRm {
+  width: 20%;
+  margin: 5px;
+  text-align: center;
+  border-radius: 10px;
+}
+.cartQty:focus {
+  outline: none;
+  border: darkgreen 2px solid;
+  border-radius: 10px;
+}
+.cartRm {
+  cursor: pointer;
+}

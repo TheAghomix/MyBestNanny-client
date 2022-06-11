@@ -1,0 +1,139 @@
+.Welcoming_and_image {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.Welcome_container {
+  height: 90vh;
+  margin: auto;
+  display: grid;
+  grid-template-rows: 30% 70%;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  /* background-color: #77d374; */
+  background-color: inherit;
+}
+
+.Welcome_container::before {
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+}
+
+.Welcome_text {
+  margin-top: 3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.welcoming {
+  letter-spacing: 3px;
+  color: #3e4a3d;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+.description {
+  color: #3e4a3d;
+  font-weight: bold;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.babySitter_image {
+  height: 50%;
+  width: 50%;
+}
+
+/* formStyling */
+
+.checkbox_styling {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 30vw;
+  /* border: 1px solid black; */
+  margin: 0 auto;
+}
+
+.form_and_button_container {
+  display: grid;
+  grid-template-rows: auto;
+  text-align: center;
+}
+
+.container_navbar_form {
+  overflow: hidden;
+}
+#about-us {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100vw;
+  margin: auto;
+  padding: 20px;
+  text-align: justify;
+  padding: 0 20%;
+  height: 100vh;
+  align-content: center;
+
+  background: rgba(255, 255, 255, 0.1);
+
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(25, 150, 50, 0.3);
+}
+
+.about-us-text {
+  border: 5px outset rgb(230, 230, 230);
+  padding: 30px;
+  box-shadow: 4px 4px 20px #666666;
+  border-radius: 20px;
+}
+
+#services {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100vw;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  justify-content: space-evenly;
+}
+
+.service-container {
+  width: 40%;
+  padding: 30px;
+  position: relative;
+  height: 70vh;
+}
+.service-image {
+  position: absolute;
+  transform: translateX(-35%) scale(0.7) translateY(+25%);
+  top: -15%;
+  z-index: 5;
+}
+
+.service-info {
+  background-color: red;
+  width: 90%;
+  border-radius: 20px;
+  border: 1px black solid;
+  margin-left: 15%;
+  padding: 20px;
+  padding-left: 25%;
+  height: 80%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  box-shadow: 4px 4px 20px #666666;
+  background: rgba(255, 255, 255, 0.1);
+
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(25, 150, 50, 0.3);
+}

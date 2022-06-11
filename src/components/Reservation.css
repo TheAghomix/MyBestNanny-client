@@ -1,0 +1,111 @@
+@keyframes cardAppear {
+  from {
+    opacity: 0;
+    top: 0;
+  }
+  to {
+    opacity: 1;
+    top: 100%;
+  }
+}
+
+.orderCard {
+  flex: 1;
+  position: relative;
+  background-image: linear-gradient(
+    to bottom,
+    #fff8f0,
+    #fdf7f0,
+    #fcf7f0,
+    #faf6f0,
+    #f9f5f0
+  );
+  width: 40%;
+  min-height: 220px;
+  margin: 20px 0;
+  border: solid black 1px;
+  border-radius: 20px;
+  display: grid;
+  grid-template: 25% 75% / 55% 45%;
+  padding: 20px;
+  box-shadow: inset 32px 32px 64px #e8e8e8, inset -32px -32px 64px #ffffff;
+  box-shadow: -9px 25px 42px rgba(0, 0, 0, 0.3);
+  animation: cardAppear 0.5s steps(60) 0s forwards;
+}
+.orderRemover {
+  position: absolute;
+  top: 5%;
+  right: 1%;
+  background-color: none;
+  background: none;
+  color: inherit;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+.targetData {
+  grid-row: 2/2;
+  grid-column: 1/1;
+  display: flex;
+  flex-flow: column wrap;
+  font-size: 1.1rem;
+}
+.targetData p:nth-child(2) {
+  place-self: center;
+  margin-left: -50px;
+}
+.targetData p:nth-child(3) {
+  place-self: center;
+  margin-left: 30px;
+}
+.productsOrdered {
+  grid-row: 2;
+  grid-column: 2;
+  text-align: center;
+  font-size: 1.1rem;
+}
+.productsOrderedAlt {
+  height: 120px;
+  place-self: center;
+}
+.oneProductOrdered {
+  font-size: 1rem;
+  font-family: monospace;
+  margin: 10px 0;
+  text-align: center;
+}
+.productList {
+  grid-row: 2;
+  grid-column: 2;
+}
+.orderDate {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  place-self: center;
+  grid-row: 1;
+  font-size: clamp(1.2rem, 10vw, 1.7rem);
+  color: red;
+}
+.orderContainer {
+  margin: 5% 0;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.deleteOrderButton:hover {
+  animation: buttonHover 0.3s ease forwards;
+}
+@keyframes buttonHover {
+  to {
+    transform: scale(1.5);
+  }
+}
+
+@media screen and (max-width: 1090px) {
+  * {
+    font-size: 0.9rem;
+  }
+}

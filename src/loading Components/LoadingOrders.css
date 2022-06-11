@@ -1,0 +1,52 @@
+.orderCardSkeleton {
+  width: 40%;
+  min-height: 220px;
+  margin: 20px 0;
+  border-radius: 20px;
+  padding: 20px;
+  background-image: linear-gradient(
+    to bottom,
+    #fff8f0,
+    #fdf7f0,
+    #fcf7f0,
+    #faf6f0,
+    #f9f5f0
+  );
+}
+.orderDateSkeleton {
+  height: 30px;
+  width: 60%;
+  background-color: #e6dada;
+  margin: auto;
+  margin-top: 10px;
+  border-radius: 20px;
+  animation: skeleton 1s steps(60) infinite;
+}
+.dataPlaceHolder {
+  background-color: #e6dada;
+  color: transparent;
+  width: 90%;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  animation: skeleton 1s steps(60) infinite;
+}
+.gridSide {
+  flex: 1;
+}
+.gridItems {
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: 30px;
+}
+
+@keyframes skeleton {
+  0% {
+    background-color: #e6dada;
+  }
+  50% {
+    background-color: #e6dada81;
+  }
+  100% {
+    background-color: #e6dada;
+  }
+}
